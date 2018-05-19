@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>typing</title>
+    <style>
+        #LeftTips{
+            width: 400px;
+            height: 400px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 4px #ccc;
+            margin: 50px auto;
+            padding: 20px;
+            font-family: '微软雅黑 Light';
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="LeftTips"></div>
+<script src="js/typing.js"></script>
+<script>
+    window.onload = function(){
+// 打字提示效果
+        var Tipstext = "Tips!<br /><br/>1.这是只是一个小工具哦！<br />2." +
+                        "打字速度可调整！" +
+                        "<br />3.可以关注我们的公众号:" +
+                        "<br><br><img src='img//1.jpg'><br><br/>" +
+                        "<b>欢迎您使用 : )</b>";
+        typing({
+            "Tipstext":Tipstext,
+            "ContainerId":"LeftTips",
+            "speed":30
+        })
+    }
+</script>
+</body>
+</html>
